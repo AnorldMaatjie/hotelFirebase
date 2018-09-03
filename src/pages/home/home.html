@@ -1,0 +1,28 @@
+ <!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding class="main">
+  <!-- <ion-icon class="icon" (click)="back2()" name="md-arrow-round-back"></ion-icon>
+<h1>LogIn</h1> -->
+  <ion-list class="body">
+
+      <ion-item class="textbox">
+        <ion-label id="label" ><ion-icon name="mail"></ion-icon></ion-label>
+        <ion-input  type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+    
+      <ion-item class="textbox">
+        <ion-label ><ion-icon name="key"></ion-icon></ion-label>
+        <ion-input type="password" placeholder="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    
+
+
+      <button ion-button block color="ora" class="btn" round (click)="login()">LogIn</button>
+      <p (click)="create()">CREATE ACCOUNT</p>
+    </ion-list>
+
+</ion-content> 

@@ -1,0 +1,39 @@
+page-confirm {
+    .card-ios {
+      color: rgba(255, 255, 255, 0.774);
+        border: 10px solid  rgba(26, 23, 19, 0.164);
+        box-shadow: 2px 2px 4px 3px black;
+        border: 3px;
+        border-radius: 12px;
+    }
+
+    h1{
+        color: 	#FFBF06;
+        text-align: center; 
+        font-family: 'Times New Roman', Times, serif; 
+        margin-top: 0px;
+    }
+    .main{
+        background-color: #444341;
+    }
+    .main1{
+        background-color: whitesmoke;
+    }
+    h2{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-style: inherit;
+    }
+    .main2{
+        border: 10px solid  rgba(26, 23, 19, 0.164);
+        box-shadow: 2px 2px 4px 3px #444341;
+        border: 3px;
+        border-radius: 12px;
+    }
+
+    img{
+        height: 50vh;
+        width: 60vh;
+    }
+}

@@ -1,0 +1,36 @@
+<!--
+  Generated template for the HotelsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header color="hd">
+    <ion-toolbar color="hd">
+        <ion-buttons start>
+          <button ion-button icon-only  color="ora" class="view" (click)="View()">View
+          </button>
+        </ion-buttons>
+        <ion-title class="name" color="ora"  >Morula Hotel</ion-title>
+        <ion-buttons end>
+          <button ion-button icon-only color="ora" class="logout" (click)="logout()">logOut </button>
+        </ion-buttons>
+      </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="main" >
+<ion-card  *ngFor="let i of arrayPic ; let a =index"  class="main2" (click)="bookIn(a)">
+    <img src="{{i.picture}}"/>
+    <ion-card-content>
+      <ion-card-title>
+          {{i.name}}
+        </ion-card-title>
+        <p>{{i.price}}</p>
+      <p>
+          {{i.desctiption}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+ 
+
+</ion-content>

@@ -1,0 +1,70 @@
+<!--
+  Generated template for the BookingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content class="main">
+    <ion-icon class="icon" (click)="back1()" name="md-arrow-round-back"></ion-icon>
+    <h1>Booking Information </h1>
+    <ion-list class="tops">
+      <ion-item class="textbox">
+        <ion-label >Name</ion-label>
+        <ion-input type="text" #name></ion-input>
+      </ion-item>
+    
+    
+      <ion-item class="textbox">
+        <ion-label >Surname</ion-label>
+        <ion-input type="text" #surname></ion-input>
+      </ion-item>
+    
+
+    
+        <ion-item class="textbox">
+          <ion-label >Guest Number</ion-label>
+          <ion-input type="Number" #num></ion-input>
+        </ion-item>
+     
+      
+        <ion-item class="textbox">
+          <ion-label >Number Of Room</ion-label>
+          <ion-input type="Number" #roomNo></ion-input>
+        </ion-item>
+     
+    
+        <ion-item class="textbox">
+          <ion-label class="list">Room Type</ion-label>
+          <ion-select #room class="list"> 
+            <ion-option >Single</ion-option>
+            <ion-option >Double</ion-option>
+            <ion-option >Triple</ion-option>
+            <ion-option >Queen</ion-option>
+            <ion-option >King</ion-option>
+            <ion-option >Twin</ion-option>
+          </ion-select>
+        </ion-item>
+      
+    <ion-item class="textbox">
+
+        <ion-label class="white"><ion-icon ios="ios-calendar-outline" md="md-calendar" id="space"></ion-icon>Check-In</ion-label>
+        <ion-datetime class="white" displayFormat="DD MMM YYYY" pickerFormat="MM/DD/YYYY"  #dateIn></ion-datetime>
+      </ion-item>
+      <ion-item class="textbox">
+
+          <ion-label class="white"><ion-icon ios="ios-calendar-outline" md="md-calendar" id="space"></ion-icon>Check-Out</ion-label>
+          <ion-datetime class="white" displayFormat="DD MMM YYYY" pickerFormat="MM/DD/YYYY" #dateOut></ion-datetime>
+        </ion-item>
+
+        <button ion-button block  round color="ora" (click)="Booking(name.value,surname.value,num.value,roomNo.value,room.value,dateIn.value,dateOut.value)">Book</button>
+    <button ion-button block round (click)="Back5()" color="ora">Cancel</button>
+      </ion-list>
+
+
+
+    
+
+  </ion-content>
